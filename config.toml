@@ -1,5 +1,7 @@
 baseURL = 'https://saulxy.github.io'
 languageCode = 'en-us'
 title = 'Viviendo del código'
-theme = 'researcher'
+theme = 'PaperMod'
+
+
 
