@@ -1,7 +1,7 @@
 ---
 title: "Primera Historia"
 date: 2022-06-05T00:52:49-04:00
-draft: true
+draft: false
 ---
 # Creando un blog usando HUGO
 Después de darle muchas vueltas al asunto, decidí retomar mi blog, pero esta vez buscando una alternativa abierta y de bajo o nulo costo.
