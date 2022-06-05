@@ -3,5 +3,6 @@ languageCode = 'en-us'
 title = 'Viviendo del código'
 theme = 'PaperMod'
 
+canonifyurls = true
 
 
