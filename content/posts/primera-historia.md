@@ -12,3 +12,5 @@ La mejor parte es la integración con GitHub pages y su proceso de integración 
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
 Los siguientes pasos es decidir si rescato los artículos de mi mas reciente intento de tener un blog personal o si bien empiezo desde cero; el tiempo dirá.
+
+Update: Al dia de hoy todo funciona bien, y por lo menos no tendre que pagar un hosting solo por la necesidad de un blog.s
