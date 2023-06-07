@@ -17,7 +17,7 @@ Este es de mis favoritos y que no necesita tanta explicación, ya que es simplem
 
 > Estoy de acuerdo con los tiempos, pero vamos a agregar mas desarrolladores para terminar pronto
 
-Cuando **agregar más manos** es parte del proceso de trabajo, es un síntoma de un proyecto desastroso. Simplemente esto no debería existir en el desarrollo de software y es de sorprendente que aún hay managers repitiéndolo y aplicándolo cuando ya no encuentran salida.
+Cuando **agregar más manos** es parte del proceso de trabajo, es un síntoma de un proyecto desastroso. Simplemente esto no debería existir en el desarrollo de software y es sorprendente que aún hay managers repitiéndolo y aplicándolo cuando ya no encuentran salida a la carga o metas irracionales de parte de mandos altos.
 
 En principio, revisar y pedir justificación por aquellos tiempos que sobrepasan los acuerdos establecidos de entrega no es descabellado y es compatible con el ejercicio de estimación, pero rechazar los tiempos empujado únicamente por cubrir tiempos de entrega es inaceptable. Sin embargo, aquellos que rechazan una estimación y proponen un numero de horas sacado de la nada, simplemente deben de replantear su profesión.
 
