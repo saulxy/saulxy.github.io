@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.161.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Viviendo del código</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Viviendo del código (Alt + H)">Viviendo del código</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">La metodología de la fuerza bruta en el desarrollo de software 
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Érase una vez un proyecto donde todo era posible, incluso si las peticiones eran ridículas, los requerimientos eran cumplidos en tiempo, pero no libre de errores. Estos errores después tenían que resolverse, pero siguiendo el mismo patrón de intentos cada vez más descabellados dirigidos solo por frases descorazonadoras como “debe de estar listo para tal día a toda costa” o “esto es normal en todos los proyectos de software”. Esta forma de trabajo estaba en el ADN del proyecto, porque no importaba la rotación constante de personal, solo se buscaban remplazos para mantener la capacidad calculada por el número de desarrolladores asignados a cada área de trabajo sin tomar en cuenta las capacidades de cada miembro. Esta entidad deforme siguió generando ganancias, por eso a nadie le importaba lo que pasara tras bambalinas; lo importante era el resultado y no los daños colaterales.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2024-03-20 00:35:53 -0400 EDT'>March 20, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to La metodología de la fuerza bruta en el desarrollo de software " href="http://localhost:1313/posts/fuerza-bruta/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tu proyecto es un desastre y tú eres culpable
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Imaginemos que llevas años trabajando en un mismo proyecto, el cual no ha demostrado un esfuerzo real por mejorar los procesos que impactan al equipo de desarrollo, las actividades en general son repetitivas, los planes de trabajo no son elaborados con fundamento y tú eres la documentación del modulo o componentes en los que has trabajado durante toda tu estancia. Sin pensarlo podemos concluir que es un ambiente desagradable, pero quizás tienes razones personales para seguir ahí y lo único que te queda es quejarte o trabajar con mala actitud que no tiene consecuencias porque llegaste al punto de ser un recurso del proyecto únicamente por el conocimiento que ganaste con el tiempo.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-20 01:17:40 -0400 EDT'>September 20, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Tu proyecto es un desastre y tú eres culpable" href="http://localhost:1313/posts/desastre-tu-eres-culpable/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Regatear Esfuerzos
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Como equipo de desarrollo, es normal recibir tareas para determinar las fechas de entrega de ciertos componentes independientemente de la metodología usada. Regularmente, la tarea de establecer un LOE (Level of effort) debería ser un proceso con un tiempo establecido y no una petición de última hora guiado por suposiciones o mera experiencia personal. El riesgo se hace claro cuando incluso se pretende hacer una estimación sin tener todos los pormenores del requerimiento listos, con lo que cualquier tiempo dado es simple especulación sin fundamento y que no debe ser considerado para la toma de decisiones. Si es posible pasar estos obstáculos iniciales, aun es necesario presentar la estimación a quien aprobara los tiempos y en este punto pueden surgir fricciones por causa de malas practicas o por miedo a presentar el plan de trabajo a mandos superiores si no siguen la visión de estos. A esto se le llamaremos la etapa de regateo del esfuerzo por parte de Project managers o lideres técnicos, quienes se encargan de aprobar dichos tiempos y que podrán no estar de acuerdo con estos por razones que varían entre proyectos, pero lo esperado es discutirlos hasta que todos este de acuerdo. Sin embargo, esto es una historia de terror, así que a continuación algunas de las reacciones o comentarios comunes al presentar una estimación para una tarea desarrollo.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-10-11 12:28:23 -0400 EDT'>October 11, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Regatear Esfuerzos" href="http://localhost:1313/posts/regatear-esfuerzos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Primera Historia: Creando un blog usando HUGO
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Después de darle muchas vueltas al asunto, decidí retomar mi blog, pero esta vez buscando una alternativa abierta y de bajo o nulo costo.
+Mi solución común para mi blog personal casi siempre ha sido WordPress, pero normalmente lo hago hospedándolo en un servidor compartido que es un costo anual de $200 USD aproximadamente. Al ser un blog personal, no aspiro a tener ganancias por tanto nunca será autosustentable y no estamos para estar tirando el dinero estos días.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2022-06-05 00:52:49 -0400 EDT'>June 5, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Primera Historia: Creando un blog usando HUGO" href="http://localhost:1313/posts/primera-historia/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>All right reserved</span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
